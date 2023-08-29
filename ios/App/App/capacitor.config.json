@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "app-club",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}
