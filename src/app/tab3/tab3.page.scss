@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+
+#container {
+  background: #4a2366;
+  transform: translateY(250px);
+  text-align: center;
+  
+}
+ion-content{
+  --background: #4a2366;
+}
+ion-card {
+
+  width: 95%;
+  background: #fff;
+  border-radius: 6px;
+  //padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 10% auto; /* Use auto for horizontal margin to center the container */
+  flex-direction: row;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  //flex-wrap: wrap;
+  //display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: auto;
+}
+.topic-text{
+  font-size: 22px;
+  font-weight: 600;
+  color: #3e2093;
+  text-align: center;
+}
+
+ion-input {
+  width: 100%;
+  //margin-left: 1%;
+  font-family: 'Libre Baskerville', serif;
+  background: #f0f1f8;
+  border-radius: 6px;
+  padding: 0 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  //margin-right: 20px;
+  --padding-start: 10px;
+}
+
+ion-button {
+  height: 56px;
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 20px;
+  --background: rgba(0, 0, 0, 0.575);
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Libre Baskerville', serif;
+}
+
+
+
+
+/*
+.formBruh {
+  border-radius: 18px;
+}
+*/

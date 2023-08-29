@@ -1,0 +1,8 @@
+{
+  "name": "app-club",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,87 @@
+
+ion-button {
+  width: 50%;
+  margin-left: 25%;
+  background-color: #d1c392;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+ion-col {
+  background-color: #4c037c;
+  border: solid 0px #d4af3700;
+  color: #D4AF37;
+  text-align: center;
+  padding: 0px;
+  bottom: 1rem;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+  --swiper-pagination-bullet-inactive-color: var(--ion-color-step-200, #800080);
+  --swiper-pagination-color: var(--ion-color-primary, #D4AF37);
+}
+
+swiper-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.club-card {
+  border: solid 5px #d1c392;
+  height: 100px;
+  display: flex;
+  align-items: center; //vertical change 
+  justify-content: center; //horizontal change
+  margin-top: 0px;
+
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+ion-card-title {
+  font-weight:bold;
+  font-size: 4.0vw; //bigger and smaller with da screen "vw"
+  position:relative;
+ 
+  
+  
+}
+
+.background {
+  background-color: #4c037c;
+  border: 5px solid #000000;
+}
+
+
+ion-toolbar {
+  --background: #4c037c;
+  top: 0;
+  z-index: 1000;
+  position: sticky;
+}
+ion-searchbar {
+  --border-radius: 20px;
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  --background: white;
+  margin-top: 10px;
+}
+
+
+ion-content {
+  --background: #4c037c;
+}
+
+.ion-content-scroll-host {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow-y: auto;
+}

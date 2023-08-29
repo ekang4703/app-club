@@ -1,0 +1,96 @@
+<ion-content>
+  <div class="card card1">
+    <div class="title-header">
+      <h1>Welcome To<br><span class="purple-text">Valencia High School</span><br>Clubs</h1>
+      <p>Discover Your<span class="purple-text"> Passion</span></p>
+      <button
+      routerLink="gettingStarted" 
+      class="get-started-button">Get Started</button>
+    </div>
+    <div class="card-image-container">
+      <div class="image-overlay"></div>
+      <img src="assets/valenciaex.jpg" alt="Valencia" class="card-image">
+    </div>
+  </div>
+
+  
+
+  <div class="card card3">
+    <header class="qaf__header">
+      <h1 class="qaf__header-title">Frequently Asked Questions</h1>
+    </header>
+  
+  <ion-accordion-group>
+    <ion-accordion value="first">
+      <ion-item slot="header" color="light">
+        <ion-label>What is CLUB STAR STUDENT</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">CLUB STAR STUDENT is a gateway to connect students to all the clubs and activities going on around school, filling the void of conenctivity between students and clubs.</div>
+    </ion-accordion>
+    <ion-accordion value="second">
+      <ion-item slot="header" color="light">
+        <ion-label>How do I display my club?</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">In order to display your club you will need to navigate to the forms tab to submit a club, please keep in mind that the clubs tab is updated biweekly so your club may take up to 14 days to display.</div>
+    </ion-accordion>
+    <ion-accordion value="third">
+      <ion-item slot="header" color="light">
+        <ion-label>Third Accordion</ion-label>
+      </ion-item>
+      <div class="ion-padding" slot="content">No pictures are not necessarily required, but it's preferred to have pictures to allow your clubs page to look as best as can be.   No pictures are not necessarily required, but it's preferred to have pictures to </div>
+    </ion-accordion>
+  </ion-accordion-group>
+
+<div class="picture">
+  <img src="https://media.discordapp.net/attachments/1073097334608638063/1140451183526432921/school_logo_2.png?width=196&height=252">
+</div>
+
+
+  </div>
+
+<div class="card">
+  <div class="container">
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Meet your Creators</div>
+          <div class="text-one">Evan Kang</div>
+          <div class="text-two">Daniel Huiza</div>
+          <div class="text-one">Bill Scott</div>
+          <div class="text-two">Pranav Basnet</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">clublinkdevteam@gmail.com</div>
+          <!--
+          <div class="text-two">info.sampleemail@gmail.com</div>
+          -->
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Need Help or Have a Question?</div>
+        
+        <form action="#" (ngSubmit)="dataSubmit()" enctype="multipart/form-data">
+         
+            <ion-input type="text" placeholder="Enter your name" [(ngModel)]="formData.name" name="name"></ion-input>
+          
+            <ion-input type="text" placeholder="Enter your email" [(ngModel)]="formData.email" name="email"></ion-input>
+         
+            <ion-input class="message-box" type="text" placeholder="Enter your message" [(ngModel)]="formData.questionsconcerns" name="questionsconcerns"></ion-input>
+         
+          <ion-button class="bronbron" (click)="showConformation()" expand="block">Submit</ion-button>
+        </form>
+      </div>
+    </div> 
+  </div>
+
+
+
+</div>
+ 
+<script type="text/javascript" src="assets/js/tab1.page.js"></script>
+  
+</ion-content>
+

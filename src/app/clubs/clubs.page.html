@@ -1,0 +1,39 @@
+<ion-content>
+  <ion-header>
+    <ion-button fill="clear" routerLink="clubPath">
+      <ion-icon slot="icon-only" name="arrow-back-outline" ></ion-icon>
+    </ion-button>
+    <div class="clubTitle">{{ club?.name }}</div>
+  </ion-header>
+  
+<ion-card class="clubContainer">
+  <div class="clubDescription">
+    <swiper-container (sliderchange)="swiperSlideChanged($event)" [loop]="true" [pagination]="true" [zoom]="true">
+      <swiper-slide *ngFor="let image of club?.images">
+        <div class="swiper-zoom-container">
+          <img [src]="image" alt="Club Image">
+        </div>
+      </swiper-slide>
+    </swiper-container>
+    <ion-card-content> {{ club?.description }} </ion-card-content>
+  </div>
+
+  <ion-list>
+    <ion-item>Meeting Info: {{club?.meetingInfo}}</ion-item>
+    <ion-item>Club President: {{ club?.clubPresident }}</ion-item>
+    <ion-item>President Email: {{ club?.email }} </ion-item> 
+    <ion-item>Teacher Advisor: {{ club?.teacherAdvisor}}</ion-item>
+  </ion-list>
+
+  
+
+
+  <form class="centered-form">
+    <ion-input [(ngModel)]="formData.number" class="inputID" name="number" placeholder="ID Number" required></ion-input>
+      <ion-button type="submit" class="joinButton" fill="solid" href="https://classroom.google.com/c/NjEzNzQ2Njg2NTY2?cjc=lqfmmcv" target="_blank" (click)="submitData()" [disabled]="!isValidInput()">
+        Join the Club
+    </ion-button>
+  </form>
+</ion-card>
+</ion-content>
+

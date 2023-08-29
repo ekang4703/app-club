@@ -1,0 +1,54 @@
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title class="topic-text">Submit Your Club Below </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+    <form (ngSubmit)="submitData()" class="formBruh" enctype="multipart/form-data" id="uploadForm">
+
+        <ion-input label="hey there" labelPlacement="stacked" type="text" [(ngModel)]="formData.name" name="name" placeholder="Enter your club's name" style="font-family: 'Libre Baskerville', serif;"></ion-input>
+
+        <ion-input type="email" [(ngModel)]="formData.email" name="email" placeholder="Enter your email" style="font-family: 'Libre Baskerville', serif;"></ion-input>
+
+    
+        <ion-input type="text" [(ngModel)]="formData.president" name="president" placeholder="Club President"></ion-input>
+
+
+        <ion-input type="text" [(ngModel)]="formData.vicepresident" name="vicepresident"placeholder="Club Vice President"></ion-input>
+
+      
+        <ion-input type="text" [(ngModel)]="formData.secretary" name="secretary" placeholder="Club Secretary"></ion-input>
+
+
+        <ion-input type="text" [(ngModel)]="formData.treasurer" name="treasurer" placeholder="Club Treasurer"></ion-input>
+
+
+        <ion-input type="text" [(ngModel)]="formData.teacheradvisor" name="officer" placeholder="Teacher Advisor"></ion-input>
+
+        <ion-input label="Mission Statement" labelPlacement="stacked" type="text" [(ngModel)]="formData.missionstatement" name="missionstatement" placeholder="Mission Statement" ></ion-input>
+      
+        <ion-input type="text" [(ngModel)]="formData.meetinginfo" name="meetinginfo" placeholder="Google Classroom Join Link"></ion-input>
+      
+      <ion-label position="floating">Club Images (Optional) </ion-label>
+
+        
+      <input type="file" accept="image/*" id="fileInput" (change)="handleFileInput($event)" name="clubPictures" multiple />
+      <div *ngIf="selectedFiles.length > 0">
+        <p>Selected files:</p>
+        <ul>
+          <li *ngFor="let file of selectedFiles">{{ file.name }}</li>
+        </ul>
+      </div>
+     
+
+      <ion-button (click)="showConfirmation()" expand="block">Submit</ion-button>
+    </form>
+    </ion-card-content>
+      
+  </ion-card>
+
+  
+  </ion-content>
+  
+  
+  <script src="https://unpkg.com/@supabase/supabase-js@2"></script>
